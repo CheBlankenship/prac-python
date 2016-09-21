@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="form-prac.css" media="screen" title="no title">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <title>form</title>
+</head>
+    <body>
+        <div class="row wrap">
+            <div class="col-md-8 col-xs-offset-2">
+                <form action="submit.php" enctype="multipart/form-data">
+                    <label class="top">Survey Questions</label>
+                    <div class="name">
+                            <label class="name">What is your name?
+                                <input type="text" name="username" value="name" class="form-control">
+                            </label>
+                    </div>
+                    <div class="form-group">
+                        <label>What is your gender?
+                            <div class="checkbox">
+                                <label>Male
+                                    <input type="radio" name="male" value="male">
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>Female
+                                    <input type="radio" name="female" value="female">
+                                </label>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="password">What is your password?
+                            <input type="password" name="password" class="form-control">
+                        </label>
+                    </div>
+                    <div class="form-input">
+                            <label class="food">Check all foods below that you like:
+                                <div class="form-input">
+                                    <label>Tacos
+                                    <input type="checkbox" name="tacos" value="yes">
+                                    </label>
+                                </div>
+                                <div class="form-input">
+                                    <label>Fried rice
+                                        <input type="checkbox" name="Fried rice" value="yes">
+                                    </label>
+                                </div>
+                                <div class="form-input">
+                                    <label>Catfish
+                                        <input type="checkbox" name="catfish" value="yes">
+                                    </label>
+                                </div>
+                                <div class="form-input">
+                                    <label>Sandwiches
+                                        <input type="checkbox" name="sandwiches" value="yes">
+                                    </label>
+                                </div>
+                                <div class="form-input">
+                                    <label>Burgers
+                                        <input type="checkbox" name="burgers" value="yes">
+                                    </label>
+                                </div>
+                                <div class="form-input">
+                                    <label>Fries
+                                        <input type="checkbox" name="fries" value="yes">
+                                    </label>
+                                </div>
+
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label class="sistem">Which operating system do you use (use a select box)?
+                            <select name="select-food" class="form-control">
+                                <option value="Windows">Windows</option>
+                                <option value="OSX">OSX</option>
+                                <option value="Linux">Linux</option>
+                                <option value="Plan 9">Plan 9</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label>Do you have any questions?
+                            <textarea name="comment" class="form-control">Enter a comment</textarea><br>
+                            <div class="submit">
+                            <div class="form-input">
+                                <input type="submit" name="submit" value="Submit" class="form-control">
+                            </div>
+                        </div>
+                        </label>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
